@@ -132,6 +132,12 @@ export function useWeddingAnimations(scope: RefObject<HTMLElement | null>) {
       // ── Vestimenta ─────────────────────────────────────────────
       gsap.from(".dress-icon", { scale: 0, rotate: -200, duration: 1.5, ease: "elastic.out(1, 0.5)", scrollTrigger: { trigger: ".dress-icon", start: "top 88%", toggleActions: "play none none reverse" } });
 
+      // ── Lluvia de sobres: caen girando y quedan flotando ───────
+      gsap.from(".mini-envelope", {
+        y: -140, rotate: (i) => [-40, 30, -20][i % 3], autoAlpha: 0, duration: 1.6, ease: "bounce.out", stagger: 0.18,
+        scrollTrigger: { trigger: ".gift-rain", start: "top 85%", toggleActions: "play none none reverse" }
+      });
+
       // ── RSVP: destello que gira con el scroll ──────────────────
       gsap.to(".rsvp-sparkle", { rotate: 360, ease: "none", scrollTrigger: { trigger: ".rsvp-section", start: "top bottom", end: "bottom top", scrub: 1 } });
 
