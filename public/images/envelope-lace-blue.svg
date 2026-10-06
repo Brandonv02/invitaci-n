@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="240" height="240" viewBox="0 0 240 240">
+  <defs>
+    <!-- pétalo, flor de cinco pétalos, rosa en espiral, hoja y ramita -->
+    <path id="petal" d="M0-2.5C3.2-6 3.4-11 0-13.5-3.4-11-3.2-6 0-2.5Z"/>
+    <g id="flower">
+      <use xlink:href="#petal"/><use xlink:href="#petal" transform="rotate(72)"/><use xlink:href="#petal" transform="rotate(144)"/><use xlink:href="#petal" transform="rotate(216)"/><use xlink:href="#petal" transform="rotate(288)"/>
+      <circle r="2.4"/><circle cx="0" cy="-6" r=".6"/><circle cx="5.7" cy="-1.9" r=".6"/><circle cx="3.5" cy="4.9" r=".6"/><circle cx="-3.5" cy="4.9" r=".6"/><circle cx="-5.7" cy="-1.9" r=".6"/>
+    </g>
+    <g id="rose">
+      <path d="M0-12C8-12 13-6 12 1 11 9 3 13-4 11-11 9-13 0-10-6-7-11-2-12 0-12Z"/>
+      <path d="M-1-3C2-4 4-1 3 2 2 5-2 6-4 4-6 1-4-4 0-6 4-8 8-5 8-1 9 4 5 8 0 8"/>
+      <path d="M-12-2C-15-6-14-10-10-12M12 3C15 7 13 11 9 12"/>
+    </g>
+    <path id="leaf" d="M0 0C4-5 11-6 16-4 12 1 5 2 0 0ZM1 0 13-3.5"/>
+    <g id="sprig">
+      <path d="M0 0C2-10 1-20-3-30"/>
+      <use xlink:href="#leaf" transform="translate(.5 -6) rotate(-35) scale(.7)"/>
+      <use xlink:href="#leaf" transform="translate(1 -12) rotate(-150) scale(.65)"/>
+      <use xlink:href="#leaf" transform="translate(.6 -18) rotate(-40) scale(.6)"/>
+      <use xlink:href="#leaf" transform="translate(-.8 -24) rotate(-145) scale(.55)"/>
+      <circle cx="-3" cy="-31.5" r="1.4"/>
+    </g>
+    <g id="lace" fill-rule="evenodd">
+      <!-- enredaderas -->
+      <path d="M14 226C38 196 30 162 66 132S118 72 106 26"/>
+      <path d="M134 228C150 204 186 186 226 172"/>
+      <path d="M158 18C176 38 176 66 196 84"/>
+      <path d="M20 96C34 84 52 84 60 70"/>
+      <!-- hojas sobre las enredaderas -->
+      <use xlink:href="#leaf" transform="translate(30 200) rotate(-20)"/>
+      <use xlink:href="#leaf" transform="translate(34 178) rotate(200)"/>
+      <use xlink:href="#leaf" transform="translate(50 150) rotate(-40)"/>
+      <use xlink:href="#leaf" transform="translate(92 104) rotate(190)"/>
+      <use xlink:href="#leaf" transform="translate(104 82) rotate(-60)"/>
+      <use xlink:href="#leaf" transform="translate(110 54) rotate(160)"/>
+      <use xlink:href="#leaf" transform="translate(160 200) rotate(-70)"/>
+      <use xlink:href="#leaf" transform="translate(196 184) rotate(110)"/>
+      <use xlink:href="#leaf" transform="translate(170 40) rotate(20)"/>
+      <use xlink:href="#leaf" transform="translate(178 62) rotate(200)"/>
+      <use xlink:href="#leaf" transform="translate(40 88) rotate(-80)"/>
+      <!-- flores -->
+      <use xlink:href="#rose" transform="translate(70 128) scale(1.1)"/>
+      <use xlink:href="#rose" transform="translate(196 92) scale(.9)"/>
+      <use xlink:href="#rose" transform="translate(132 226) scale(.8)"/>
+      <use xlink:href="#flower" transform="translate(106 22) scale(.9)"/>
+      <use xlink:href="#flower" transform="translate(62 66)"/>
+      <use xlink:href="#flower" transform="translate(146 150) scale(1.15)"/>
+      <use xlink:href="#flower" transform="translate(222 168) scale(.8)"/>
+      <use xlink:href="#flower" transform="translate(24 30) scale(.7)"/>
+      <use xlink:href="#flower" transform="translate(96 192) scale(.6)"/>
+      <!-- ramitas sueltas -->
+      <use xlink:href="#sprig" transform="translate(130 120) rotate(30)"/>
+      <use xlink:href="#sprig" transform="translate(210 140) rotate(-150)"/>
+      <use xlink:href="#sprig" transform="translate(24 236) rotate(-20) scale(.8)"/>
+      <use xlink:href="#sprig" transform="translate(150 66) rotate(-120) scale(.7)"/>
+      <use xlink:href="#sprig" transform="translate(222 20) rotate(160) scale(.7)"/>
+      <!-- puntitos de encaje -->
+      <g stroke="none" fill-opacity=".9">
+        <circle cx="86" cy="150" r="1"/><circle cx="90" cy="156" r=".8"/><circle cx="84" cy="160" r=".7"/>
+        <circle cx="176" cy="122" r="1"/><circle cx="182" cy="116" r=".8"/><circle cx="182" cy="126" r=".7"/>
+        <circle cx="122" cy="96" r=".9"/><circle cx="40" cy="120" r=".9"/><circle cx="46" cy="114" r=".7"/>
+        <circle cx="206" cy="220" r="1"/><circle cx="212" cy="214" r=".8"/><circle cx="140" cy="20" r=".9"/>
+      </g>
+    </g>
+  </defs>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width=".7">
+    <!-- sombra: da el efecto de relieve -->
+    <use xlink:href="#lace" transform="translate(.8 1)" stroke="#5f788c" fill="#5f788c" fill-opacity="0" opacity=".26"/>
+    <!-- luz -->
+    <use xlink:href="#lace" stroke="#ffffff" fill="#ffffff" fill-opacity=".14" opacity=".72"/>
+  </g>
+</svg>
