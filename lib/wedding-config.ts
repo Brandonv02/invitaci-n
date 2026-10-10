@@ -1,13 +1,12 @@
 export const weddingConfig = {
   bride: "Digna",
   groom: "Brandon",
-  date: "2026-11-22T00:00:00-05:00",
+  date: "2026-11-21T00:00:00-05:00",
   venue: {
-    ceremony: { name: "Centro Comercial Premium Plaza", address: "Cra. 43A # 30-25, Av. El Poblado con Calle 30, Medellín, Antioquia", time: "Por confirmar", mapsUrl: "https://www.google.com/maps/search/?api=1&query=Centro%20Comercial%20Premium%20Plaza%2C%20Cra.%2043A%20%23%2030-25%2C%20Av.%20El%20Poblado%20con%20Calle%2030%2C%20Medell%C3%ADn%2C%20Antioquia" },
-    reception: { name: "Xalisco Rooftop", address: "Cra. 63b #70 52, Goretti, Bello, Antioquia", time: "Por confirmar", mapsUrl: "https://www.google.com/maps/search/?api=1&query=Xalisco%20Rooftop%2C%20Cra.%2063b%20%2370%2052%2C%20Goretti%2C%20Bello%2C%20Antioquia" },
+    ceremony: { name: "RANCHO ALTO - MIRADOR", address: "Después de Villalinda, vía San Pedro de los Milagros, 2 km, Bello, Antioquia", time: "4:00 p. m.", mapsUrl: "https://www.google.com/maps/search/?api=1&query=RANCHO%20ALTO%20-%20MIRADOR%2C%20Despu%C3%A9s%20de%20Villalinda%2C%20v%C3%ADa%20San%20Pedro%20de%20los%20Milagros%2C%202%20km%2C%20Bello%2C%20Antioquia" },
   },
   dressCode: "Elegante",
-  whatsappNumber: "[NÚMERO CON CÓDIGO DE PAÍS]",
+  whatsappNumber: "+573234731114",
   musicPath: "/audio/cant-help-falling-in-love.mp3",
   coupleImagePath: "/images/couple-cartoon.png"
 } as const;
